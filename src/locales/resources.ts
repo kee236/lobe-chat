@@ -11,7 +11,7 @@ export const locales = [
   'ko-KR',
   'pt-BR',
   'ru-RU',
-  'tr-TR',
+  'th-TH',
   'zh-CN',
   'zh-TW',
   'vi-VN',
@@ -86,8 +86,8 @@ export const localeOptions: LocaleOptions = [
     value: 'ru-RU',
   },
   {
-    label: 'Türkçe',
-    value: 'tr-TR',
+    label: 'Thailand',
+    value: 'th-TH',
   },
   {
     label: 'Polski',
@@ -111,4 +111,4 @@ export const localeOptions: LocaleOptions = [
   },
 ] as LocaleOptions;
 
-export const supportLocales: string[] = [...locales, 'en', 'zh'];
+export const supportLocales: string[] = [...locales, 'en', 'zh','th'];
