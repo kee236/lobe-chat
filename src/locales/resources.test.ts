@@ -37,13 +37,13 @@ describe('normalizeLocale', () => {
     expect(normalizeLocale('ja-JP')).toBe('ja-JP');
     expect(normalizeLocale('ko-KR')).toBe('ko-KR');
     expect(normalizeLocale('pt-BR')).toBe('pt-BR');
-    expect(normalizeLocale('tr-TR')).toBe('tr-TR');
+    expect(normalizeLocale('th-TH')).toBe('th-TH');
     expect(normalizeLocale('vi-VN')).toBe('vi-VN');
     expect(normalizeLocale('zh-TW')).toBe('zh-TW');
   });
 
   it('should return the input locale for unknown locales', () => {
     expect(normalizeLocale('unknown')).toBe('en-US');
-    expect(normalizeLocale('fr')).toBe('fr-FR');
+    expect(normalizeLocale('th')).toBe('th-TH');
   });
 });
