@@ -89,10 +89,33 @@ ENV OPENAI_API_KEY ""
 ENV OPENAI_PROXY_URL ""
 ENV OPENAI_MODEL_LIST ""
 
+
+docker run -d -p 3210:3210 \
+  -e OPENAI_API_KEY=sk-xxxx \
+  -e OPENAI_PROXY_URL=https://api-proxy.com/v1 \
+  -e ACCESS_CODE=lobe66 \
+  --name lobe-chat \
+  lobehub/lobe-chat
+
+
+OPENAI_API_KEY=sk-
+OPENAI_PROXY_URL=https://api-proxy.com/v1
+ACCESS_CODE=arthals2333
+OPENAI_MODEL_LIST=-gpt-4,-gpt-4-32k,-gpt-3.5-turbo-16k,gpt-3.5-turbo-1106=gpt-3.5-turbo-16k,gpt-4-0125-preview=gpt-4-turbo,gpt-4-vision-preview=gpt-4-vision
+
+
+
+
 # Azure OpenAI
 ENV USE_AZURE_OPENAI ""
 ENV AZURE_API_KEY ""
 ENV AZURE_API_VERSION ""
+
+
+
+
+
+
 
 # Google
 ENV GOOGLE_API_KEY ""
